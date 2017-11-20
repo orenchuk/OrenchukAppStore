@@ -17,6 +17,12 @@ public class AppStoreTest {
     }
 
     @Test
+    public void addApp1() throws Exception {
+        store.addApp(app);
+        System.out.println(store.apps.toString());
+    }
+
+    @Test
     public void getApp() throws Exception {
         System.out.println(store.getApp("N578394774me"));
     }

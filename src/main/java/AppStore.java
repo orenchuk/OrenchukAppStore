@@ -5,6 +5,7 @@ import java.util.Locale;
 
 public class AppStore {
     public ArrayList<App> apps;
+    public Cart cart;
 
     public void addApp(String name, double price, String description, Category category, double size) {
         App newApp = new App(name, description, price, size, category);
