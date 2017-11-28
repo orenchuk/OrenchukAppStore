@@ -1,4 +1,4 @@
-package main.java.Observer;
+package test.java;
 
 import org.junit.Test;
 

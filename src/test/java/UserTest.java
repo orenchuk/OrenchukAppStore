@@ -1,5 +1,7 @@
-package main.java.Observer;
+package test.java;
 
+import main.java.Observer.Customer;
+import main.java.Observer.User;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
