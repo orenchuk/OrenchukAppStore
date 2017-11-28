@@ -12,7 +12,7 @@ public class UserTest {
 
     @Test
     public void update() throws Exception {
-        assertNull("User is null" , user);
+        assertNotNull("User is null" , user);
         if (user.update()) {
             System.out.println("update method works");
         } else {
@@ -22,7 +22,7 @@ public class UserTest {
 
     @Test
     public void getCart() throws Exception {
-        assertNull("User is null" , user.getCart());
+        assertNotNull("User is null" , user.getCart());
     }
 
 }

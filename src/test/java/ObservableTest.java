@@ -14,7 +14,7 @@ public class ObservableTest {
 
     @Test
     public void addObserver() throws Exception {
-        assertNull("Observer is null" , obs);
+        assertNotNull("Observer is null" , obs);
         if (observable.addObserver(obs)) {
             System.out.println("method addObserver works good");
         } else {
@@ -24,12 +24,12 @@ public class ObservableTest {
 
     @Test
     public void removeObserver() throws Exception {
-        assertNull("Observer is null" , obs);
+        assertNotNull("Observer is null" , obs);
     }
 
     @Test
     public void notifyObservers() throws Exception {
-        assertNull("Observer is null" , obs);
+        assertNotNull("Observer is null" , obs);
     }
 
 }
