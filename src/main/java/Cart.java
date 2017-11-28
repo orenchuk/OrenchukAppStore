@@ -1,9 +1,11 @@
 package main.java;
 
+import main.java.Observer.Observable;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class Cart {
+public class Cart extends Observable {
     private List<App> goods;
     public PaymentStrategy paymentStrategy;
     public DeliveryStrategy deliveryStrategy;
@@ -37,4 +39,6 @@ public class Cart {
         goods.add(app);
         return true;
     }
+
+
 }
