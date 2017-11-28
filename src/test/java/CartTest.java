@@ -4,7 +4,6 @@ import main.java.Cart;
 import org.junit.Test;
 
 public class CartTest {
-
     Cart cart = new Cart();
 
     @Test
@@ -20,6 +19,26 @@ public class CartTest {
     @Test
     public void addElementToCart() throws Exception {
         System.out.println("addElementToCartTest");
+    }
+
+    @Test
+    public void getDeliveryStrategy() throws Exception {
+        System.out.println("getDeliveryStrategyTest");
+    }
+
+    @Test
+    public void setDeliveryStrategy() throws Exception {
+        System.out.println("setDeliveryStrategyTest");
+    }
+
+    @Test
+    public void getPaymentStrategy() throws Exception {
+        System.out.println("getPaymentStrategyTest");
+    }
+
+    @Test
+    public void setPaymentStrategy() throws Exception {
+        System.out.println("setPaymentStrategyTest");
     }
 
 }

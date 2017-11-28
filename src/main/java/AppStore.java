@@ -5,7 +5,6 @@ import java.util.Locale;
 
 public class AppStore {
     public ArrayList<App> apps;
-    public Cart cart;
 
     public void addApp(String name, double price, String description, Category category, double size) {
         App newApp = new App(name, description, price, size, category);
@@ -25,16 +24,16 @@ public class AppStore {
 
     public ArrayList<App> search(String name, double price, String description, Category category) {
 
-        ArrayList<App> mathingApps = new ArrayList<>();
+        ArrayList<App> matchingApps = new ArrayList<>();
 
         for (App app : apps) {
 
             if (app.getName().toLowerCase(Locale.US).equals(name.toLowerCase(Locale.US)) || app.getDescription().toLowerCase(Locale.US).equals(description.toLowerCase(Locale.US)) || app.getCategory().equals(category)) {
-                mathingApps.add(app);
+                matchingApps.add(app);
             }
         }
 
-        return mathingApps.isEmpty() ? null : mathingApps;
+        return matchingApps.isEmpty() ? null : matchingApps;
     }
 
     public AppStore() {

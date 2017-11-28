@@ -7,8 +7,8 @@ import java.util.List;
 
 public class Cart extends Observable {
     private List<App> goods;
-    public PaymentStrategy paymentStrategy;
-    public DeliveryStrategy deliveryStrategy;
+    private PaymentStrategy paymentStrategy;
+    private DeliveryStrategy deliveryStrategy;
 
     public Cart(PaymentStrategy paymentStrategy, DeliveryStrategy deliveryStrategy) {
         goods = new ArrayList<>();
@@ -41,4 +41,19 @@ public class Cart extends Observable {
     }
 
 
+    public DeliveryStrategy getDeliveryStrategy() {
+        return deliveryStrategy;
+    }
+
+    public void setDeliveryStrategy(DeliveryStrategy deliveryStrategy) {
+        this.deliveryStrategy = deliveryStrategy;
+    }
+
+    public PaymentStrategy getPaymentStrategy() {
+        return paymentStrategy;
+    }
+
+    public void setPaymentStrategy(PaymentStrategy paymentStrategy) {
+        this.paymentStrategy = paymentStrategy;
+    }
 }

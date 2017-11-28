@@ -15,12 +15,12 @@ public class AppStoreTester {
     }
 
     private static void getInfoForSearch(AppStore store) {
-        ArrayList<App> mathingApps;
+        ArrayList<App> matchingApps;
 
-        mathingApps = store.search("", 0.1, "", Category.GAMES);
+        matchingApps = store.search("", 0.1, "", Category.GAMES);
 
-        if (mathingApps != null) {
-            for (App app : mathingApps) {
+        if (matchingApps != null) {
+            for (App app : matchingApps) {
                 printOut(app);
             }
         } else {
